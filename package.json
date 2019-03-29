@@ -1,0 +1,22 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adypr/landing.git"
+  },
+  "author": "adypr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adypr/landing/issues"
+  },
+  "homepage": "https://github.com/adypr/landing#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
