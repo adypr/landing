@@ -1,0 +1,28 @@
+header.header
+    .container
+        .header__top
+            .contacts
+                a.contact(href="tel: +79012345678")
+                    img.contact__icon(src="images/phone.png" alt="phone")
+                    span.contact__text +79012345678
+                
+                a.contact(href="mailto:ta-info@yandex.ru")
+                    img.contact__icon(src="images/email.png" alt="email")
+                    span.contact__text ta-info@yandex.ru
+    .container
+        .header__bottom
+            .logo
+                img.logo(src="images/logo.png" alt="logo")
+                h2.logo Татьяна Ая
+                p.logo художник
+            nav.nav
+                - var items = ['Главная', 'Обо мне', 'Работы', 'Контакты']
+                  each item in items
+                        if item === 'Главная'
+                            a.nav__link.nav__link--active(href="#")=item
+                        else
+                            a.nav__link(href="#")=item
+
+                button.button Написать сообщение
+
+    

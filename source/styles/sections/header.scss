@@ -1,0 +1,25 @@
+.header {
+    &__top {
+        background-color: $contrast;
+    }
+}
+
+.contacts {
+    text-align: right;
+}
+
+.contact {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+    transition: 0.3s;
+    color: $dark;
+
+    &:hover {
+        color: darken($dark, 20%);
+    }
+
+    &__icon {
+        
+    }
+}

@@ -1,0 +1,26 @@
+@import "global/mixin";
+
+body {
+    font-family: $ff-main;
+    /*@include centerer-x;*/
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+.clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

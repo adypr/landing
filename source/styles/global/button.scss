@@ -1,0 +1,18 @@
+.button {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 7px 27px 7px;
+    text-decoration: none;
+    background: $attention;
+    border-color: $attention;
+    color: white;
+    transition: 0.3s;
+
+    &:hover {
+         background: lighten($attention, 7%);
+    }
+
+    &--upper {
+        text-transform: uppercase;
+    }
+}
