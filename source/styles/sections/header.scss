@@ -2,6 +2,13 @@
     &__top {
         background-color: $contrast;
     }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }
 
 .contacts {
@@ -20,6 +27,14 @@
     }
 
     &__icon {
+        height: 20px;
+    }
+}
+
+.logo {
+    display: flex;
+
+    &__img {
         
     }
 }
