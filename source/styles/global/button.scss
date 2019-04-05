@@ -1,18 +1,21 @@
 .button {
     display: inline-block;
     border-radius: 3px;
-    padding: 7px 27px 7px;
+    padding: 7px 20px 7px;
     text-decoration: none;
     background: $attention;
-    border-color: $attention;
+    border: 3px solid $attention;
     color: white;
     transition: 0.3s;
+    letter-spacing: 0.5px;
 
     &:hover {
          background: lighten($attention, 7%);
+         border-color: lighten($attention, 7%);
     }
 
     &--upper {
         text-transform: uppercase;
+        letter-spacing: 1px;
     }
 }

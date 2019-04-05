@@ -1,11 +1,16 @@
 @import "../../node_modules/font-awesome/css/font-awesome";
 @import "../../node_modules/normalize.scss/normalize";
 
+@import "global/mixin.scss";
 @import "global/vars";
 @import "global/common.scss";
 @import "global/base";
 @import "global/sprite";
+@import "global/icons.scss";
 @import "global/button.scss";
 
+@import "sections/title.scss";
 @import "sections/header";
 @import "sections/nav.scss";
+@import "sections/hero.scss";
+@import "sections/about.scss";

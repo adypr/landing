@@ -1,0 +1,25 @@
+.hero {
+    color: $dark;
+    padding-left: 15%;
+    background: url('../../images/heroimg.png') no-repeat;
+    background-position-x: 25%;
+    background-position-y: 50%;
+    background-size: auto 80%;
+    background-color: $contrast;
+    height: 400px;
+    font-family: $ff-hero;
+    font-size: 38px;
+      
+    &__block {
+        
+        padding: 5% 15px 0 40%;
+
+        &-cursive {
+            font-family: $ff-heroautor;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+    }
+    
+}
