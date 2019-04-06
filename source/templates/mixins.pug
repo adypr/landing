@@ -1,0 +1,16 @@
+mixin title(titlename, titletext)
+    div(class="title title--with-bottom-line")
+        h1(class="title title__header")=titlename
+        p(class="title__text")=titletext
+
+
+mixin directions(dirs)
+    ul(class="directions__list")
+        each dir in dirs
+            li(class="directions__item")
+                div(class="directions__image")
+                    img(class="directions__picture" src=dir[2] alt=dir[0])
+                    div(class="directions__letter")=dir[3]
+                div(class="directions__text")
+                    h4(class="directions__title")=dir[0]
+                    p(class="directions__desription")=dir[1]

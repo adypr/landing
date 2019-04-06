@@ -1,0 +1,69 @@
+.directions {
+    padding: 86px 0 94px;
+    background-color: $contrast;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        counter-reset: count;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    &__item {
+        margin-bottom: 40px;
+        border-radius: 5px;
+        box-shadow: -1px -1px 10px 1px rgba(214, 214, 214, 1);
+        background-color: $light;
+
+        &:nth-child(2n) {
+            display: flex;
+            flex-direction: row-reverse;
+            text-align: right;
+
+            .directions__text {
+                padding: 70px 90px;
+            }
+        }
+    }
+
+    &__image {
+        position:relative;
+        max-width: 340px;
+        max-height: 236px;
+        display: inline-block;
+        vertical-align: top;
+
+    }
+
+    &__picture {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__text {
+        display: inline-block;
+        vertical-align: top;
+        width: 64%;
+        font-size: 0.875rem;
+        padding: 70px 70px 55px 90px;
+    }
+
+    &__letter {
+        @include centerer-y();
+
+        right: -58px;
+        width: 103px;
+        height: 103px;
+        padding-top: 10px;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1.25rem;
+        background-color: $dark;
+        color: $light;
+
+        &:before {
+        }
+    }
+}
