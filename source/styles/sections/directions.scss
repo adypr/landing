@@ -22,7 +22,12 @@
             text-align: right;
 
             .directions__text {
-                padding: 70px 90px;
+                padding: 40px 90px 0 0;
+            }
+
+            .directions__letter {
+                right: auto;
+                left: -52px;
             }
         }
     }
@@ -47,7 +52,7 @@
         vertical-align: top;
         width: 64%;
         font-size: 0.875rem;
-        padding: 70px 70px 55px 90px;
+        padding: 40px 0 0 70px;
     }
 
     &__letter {
@@ -56,14 +61,21 @@
         right: -58px;
         width: 103px;
         height: 103px;
-        padding-top: 10px;
+        letter-spacing: -2px;
         border-radius: 5px;
         text-align: center;
-        font-size: 1.25rem;
+        line-height: 1.7;
+        font-size: 4rem;
+        font-family: $ff-logo;
         background-color: $dark;
         color: $light;
+    }
 
-        &:before {
-        }
+    &__title {
+        margin-bottom: 6px;
+    }
+
+    &__description {
+        margin: 0;
     }
 }
