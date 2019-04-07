@@ -1,0 +1,45 @@
+.work {
+    padding: 110px 0;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 256px;
+        width: 512px;
+        background-color: $medium;
+        color: $light;
+    }
+
+    &__text {
+        position: relative;
+        text-align: center;
+        margin: auto;
+
+        &:before {
+            content: '';
+            bottom: 60px;
+
+            @include sprite($workslogo);
+            @include centerer-x();
+        }
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__description {
+        margin: 0;
+    }
+
+    &__picture {
+        width: 100%;
+    }
+}

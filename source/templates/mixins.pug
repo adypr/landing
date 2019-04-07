@@ -14,3 +14,14 @@ mixin directions(dirs)
                 div(class="directions__text")
                     h3(class="directions__title")=dir[0]
                     p(class="directions__desription")=dir[1]
+
+
+mixin works(worklist)
+    ul(class="work__list")
+        each work in worklist
+            li(class="work__item")
+                div(class="work__text")
+                    h3(class="work__title")=work[0]
+                    p(class="work__description")=work[1]
+                div(class="work__image")
+                    img(class="work__picture" src=work[2])
