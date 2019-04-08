@@ -43,23 +43,6 @@
         margin-bottom: 36px;
     }
 
-    &__input {
-        display: block;
-        width: 76%;
-        margin: auto;
-        margin-bottom: 8px;
-        padding: 18px 28px;
-        border: 1px solid $dark;
-        border-radius: 3px;
-
-        &:focus, &:active {
-            box-shadow: 0 0 8px 1px rgba($dark, 0.5);
-            border-color: $dark;
-            outline: none;
-
-        }
-    }
-
     &__btn-down {
         position: relative;
         margin: auto auto 20px auto;

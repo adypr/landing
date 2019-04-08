@@ -1,0 +1,48 @@
+.footer {
+    text-align: center;
+
+    &__top {
+        padding: 88px 0 88px;
+        text-align: center;
+        background-color: $medium;
+    }
+
+    &__bottom {
+        padding: 26px;
+        text-align: center;
+    }
+
+    &__links {
+        margin-bottom: 35px;
+    }
+
+    .fab {
+        padding: 15px;
+        border: 2px solid $attention;
+        border-radius: 5px;
+        color: $attention;
+        font-size: 1.5rem;
+        transition: 0.3s;
+
+        &:hover {
+            color: $light;
+            border-color: $light;
+       }
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+    }
+
+    &__field {
+        width: 67%;
+        margin: 0 auto 27px;
+    }
+
+    &__copy {
+        padding: 10px 0 10px 0;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+}
