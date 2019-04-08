@@ -1,6 +1,6 @@
 mixin title(titlename, titletext)
     div(class="title title--with-bottom-line")
-        h1(class="title title__header")=titlename
+        h2(class="title title__header")=titlename
         p(class="title__text")=titletext
 
 
@@ -24,4 +24,4 @@ mixin works(worklist)
                     h3(class="work__title")=work[0]
                     p(class="work__description")=work[1]
                 div(class="work__image")
-                    img(class="work__picture" src=work[2])
+                    img(class="work__picture" src=work[2] alt=work[0])

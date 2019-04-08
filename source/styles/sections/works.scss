@@ -11,10 +11,15 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        height: 256px;
+        height: 252px;
         width: 512px;
         background-color: $medium;
         color: $light;
+
+        &:nth-child(n+3) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
     }
 
     &__text {
@@ -40,6 +45,6 @@
     }
 
     &__picture {
-        width: 100%;
+        max-width: 256px;
     }
 }

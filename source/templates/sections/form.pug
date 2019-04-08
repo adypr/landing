@@ -1,0 +1,18 @@
+section.form-section
+    .container
+        .title
+            h2.title.title__header Связаться со мной
+            p.title__text Вы можете отправить свои вопросы и пожелания в форме ниже
+        
+        .form__btn-down: a.arrow-down: i.fas.fa-angle-down
+
+        .form-container.is-hidden
+            form(method="post" action="#").form
+                button(type="button").button.form__close-button x
+                .form__fields
+                    input.form__input(type="text" placeholder="Ваше имя")
+                    input.form__input(type="tel" placeholder="Номер телефона")
+                    input.form__input(type="email" placeholder="Email" required)
+                    textarea.form__input(placeholder="Напишите здесь сообщение")
+
+                button(type="submit").button.button--upper Отправить сообщение

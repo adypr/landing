@@ -7,7 +7,7 @@
     border: 3px solid $attention;
     color: white;
     transition: 0.3s;
-    letter-spacing: 0.5px;
+    
 
     &:hover {
          background: lighten($attention, 7%);

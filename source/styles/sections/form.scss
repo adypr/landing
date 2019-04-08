@@ -1,0 +1,81 @@
+.form-section {
+    padding: 100px 0 110px 0;
+    background-color: $contrast;
+}
+
+.form {
+    width: 67%;
+    margin: auto;
+    padding: 60px 50px 60px 50px;
+    border-radius: 3px;
+    background-color: $light;
+    text-align: center;
+    position: relative;
+
+    &-container {
+        padding-top: 30px;
+    }
+
+    &:after {
+        @include centerer-x();
+        content: '';
+        border: 30px solid transparent;
+        border-bottom: 30px solid $light;
+        top: -59px;
+    }
+
+    &__close-button {
+        display: block;
+        position: absolute;
+        right: -16px;
+        top: -22px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        font-size: 1.4rem;
+        transition: 0.3s;
+        padding: 0 0 10px 0;
+        font-family: $technical;
+        line-height: 1.6;
+    }
+
+    &__fields {
+        margin-bottom: 36px;
+    }
+
+    &__input {
+        display: block;
+        width: 76%;
+        margin: auto;
+        margin-bottom: 8px;
+        padding: 18px 28px;
+        border: 1px solid $dark;
+        border-radius: 3px;
+
+        &:focus, &:active {
+            box-shadow: 0 0 8px 1px rgba($dark, 0.5);
+            border-color: $dark;
+            outline: none;
+
+        }
+    }
+
+    &__btn-down {
+        position: relative;
+        margin: auto auto 20px auto;
+        width: 65px;
+        height: 65px;
+        border: 2px solid $dark;
+        border-radius: 50%;
+    }
+
+}
+
+.arrow-down {
+    @include centerer-xy();
+}
+
+.fas {
+    font-size: 2.5rem;
+    color: $dark;
+}
