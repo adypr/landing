@@ -2,22 +2,37 @@
     color: $dark;
     padding-left: 15%;
     background: url('../../images/heroimg.png') no-repeat;
-    background-position-x: 25%;
+    background-position-x: 23%;
     background-position-y: 50%;
-    background-size: auto 80%;
+    background-size: 40%;
     background-color: $contrast;
-    height: 400px;
     font-family: $ff-hero;
-    font-size: 38px;
+    font-size: 2.8vw;
+    line-height: 1.6;
+
+    @media (max-width: 425px) {
+        background-position-x: 1%;
+        font-size: 5vw;
+    }
+    
       
     &__block {
         
-        padding: 5% 15px 0 40%;
+        padding: 45px 15px 65px 40%;
+
+        @media (max-width: 425px) {
+            padding: 5px 15px 5px 33%;
+        }
+       
 
         &-cursive {
             font-family: $ff-heroautor;
-            font-size: 30px;
+            font-size: 2.3vw;
             font-weight: bold;
+
+            @media (max-width: 425px) {
+                font-size: 4vw;
+            }
         }
         
     }

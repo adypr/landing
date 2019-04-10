@@ -1,7 +1,9 @@
 .nav {
     display: inline-block;
     vertical-align: top;
-    margin-right: 15px;
+    flex-grow: 1;
+    text-align: end;
+    padding: 0 10px 0 10px;
 
     &__link {
         display: inline-block;

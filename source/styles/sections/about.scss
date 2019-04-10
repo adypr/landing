@@ -1,6 +1,10 @@
 .about {
-    padding: 99px 0 105px 0;
+    padding: 99px 0 99px 0;
     text-align: center;
+
+    @media (max-width: 577px) {
+        padding: 20px 0 20px 0;
+    }
 
     &__list {
         display: flex;
@@ -8,10 +12,24 @@
         flex-wrap: wrap;
         margin: 0;
         padding: 0 50px;
+
+        @media (min-width: 500px) and (max-width: 750px) {
+            justify-content: center;
+        }
     }
 
     &__item {
         width: 25%;
+
+        @media (min-width: 500px) and (max-width: 750px) {
+            width: 50%;
+            padding: 0 10px 10px 10px;
+        }
+
+        @media (max-width: 499px) {
+            width: 100%;
+            padding-top: 20px;
+        }
     }
 
     &__header {

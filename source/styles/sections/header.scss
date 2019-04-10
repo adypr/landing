@@ -8,29 +8,65 @@
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
+
+        .button {
+            margin-right: 15px;
+
+            @media (max-width: 777px) {
+                margin: 10px 0 10px 0;
+            }
+        }
+
+        @media (max-width: 777px) {
+            flex-direction: column;
+        }
     }
 }
 
 .contacts {
     text-align: right;
+    padding: 10px;
 }
 
 .contact {
-    display: inline-block;
     vertical-align: top;
     padding: 10px;
     transition: 0.3s;
     color: $dark;
+    text-decoration: none;
 
     &:hover {
         color: darken($dark, 20%);
     }
 
-    &__icon {
-        height: 20px;
+    &__text {
+        padding-left: 8px;
+    }
+
+    .fas {
+        font-size: 1rem;
     }
 }
 
 .logo {
     display: flex;
+    padding: 5px 0 3px 15px;
+
+    &__name {
+        padding-left: 8px;
+    }
+
+    &__title {
+        margin: 0;
+        padding-top: 5px;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    @media (max-width: 777px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
