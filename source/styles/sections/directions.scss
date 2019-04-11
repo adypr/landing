@@ -1,81 +1,95 @@
 .directions {
-    padding: 86px 0 94px;
+    padding: 8vh 0 8vh;
     background-color: $contrast;
 
     &__list {
-        margin: 0;
-        padding: 0;
         counter-reset: count;
         max-width: 80%;
         margin: auto;
     }
 
     &__item {
-        margin-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 40px 0;
         border-radius: 5px;
         box-shadow: -1px -1px 10px 1px rgba(214, 214, 214, 1);
         background-color: $light;
 
         &:nth-child(2n) {
-            display: flex;
             flex-direction: row-reverse;
             text-align: right;
 
             .directions__text {
-                padding: 40px 90px 0 0;
+                padding: 15px 4.5vw 0 15px;
+
+                @media (max-width: 848px) {
+                    padding-right: 15px;
+                }
             }
 
             .directions__letter {
-                right: auto;
-                left: -52px;
+                
+                left: -3.5vw;
+            }
+
+            .directions__title {
+                text-align: right;
             }
         }
     }
 
     &__image {
         position:relative;
-        max-width: 340px;
-        max-height: 236px;
-        display: inline-block;
-        vertical-align: top;
+        max-width: 40%;
+        min-width: 250px;
 
     }
 
     &__picture {
         display: block;
         width: 100%;
-        height: 100%;
+        @media (max-width: 848px) {
+            margin-top: 10px;
+            border: 3px solid $dark;
+        }
     }
 
     &__text {
-        display: inline-block;
-        vertical-align: top;
-        width: 64%;
+        width: 60%;
+        flex-grow: 1;
+        text-align: justify;
         font-size: 0.875rem;
-        padding: 40px 0 0 70px;
+        padding: 15px 15px 0 4.5vw;
+
+        @media (max-width: 798px) {
+            padding-left: 15px;
+        }
     }
 
     &__letter {
         @include centerer-y();
 
-        right: -58px;
-        width: 103px;
-        height: 103px;
+        right: -3.5vw;
+        width: 7vw;
+        height: 7vw;
         letter-spacing: -2px;
         border-radius: 5px;
         text-align: center;
-        line-height: 1.7;
-        font-size: 4rem;
+        line-height: 1.55;
+        font-size: 5vw;
         font-family: $ff-logo;
         background-color: $dark;
         color: $light;
     }
 
     &__title {
-        margin-bottom: 6px;
+        margin: 0 0 6px 0;
+        display: block;
+        text-align: left;
     }
 
-    &__description {
-        margin: 0;
-    }
+    
 }
