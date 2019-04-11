@@ -1,8 +1,9 @@
 .footer {
     text-align: center;
 
+
     &__top {
-        padding: 88px 0 88px;
+        padding: 8vh 0 8vh 0;
         text-align: center;
         background-color: $medium;
     }
@@ -38,6 +39,10 @@
     &__field {
         width: 67%;
         margin: 0 auto 27px;
+
+        @media (max-width: 768px) {
+            width: 90%;
+        }
     }
 
     &__copy {
