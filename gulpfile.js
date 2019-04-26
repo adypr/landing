@@ -14,6 +14,7 @@ const sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('js', function() {
     return gulp.src([
+            'source/js/form.js',
             'source/js/main.js'
         ])
         .pipe(sourcemaps.init())
@@ -93,7 +94,7 @@ gulp.task('copy:images', function() {
 });
 
 
-/*--Cpoy--*/
+/*--Copy--*/
 gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
 
 

@@ -1,6 +1,6 @@
 (function() {
     var me = {};
-    var form = document.querySelector('.form-container');
+    var form = document.querySelector('.form');
     var closeButton = null;
 
     function onClose(e) {

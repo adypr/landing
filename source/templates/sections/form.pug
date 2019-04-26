@@ -4,10 +4,10 @@ section.form-section
             h2.title.title__header Связаться со мной
             p.title__text Вы можете отправить свои вопросы и пожелания в форме ниже
         
-        .form__btn-down: a.arrow-down: i.fas.fa-angle-down
+        .form__btn-down: a.arrow-down(href="#"): i.fas.fa-angle-down
 
         .form-container
-            form(method="post" action="#").form
+            form(method="post" action="#").form.is-hidden
                 button(type="button").button.form__close-button x
                 .form__fields
                     input.input(type="text" placeholder="Ваше имя")
