@@ -10,20 +10,6 @@ const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 
 
-/*--js--*/
-
-gulp.task('js', function() {
-    return gulp.src([
-            'source/js/form.js',
-            'source/js/main.js'
-        ])
-        .pipe(sourcemaps.init())
-        .pipe(concat('main.min.js'))
-        .pipe(uglify())
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest('build/js'));
-});
-
 /*--Server--*/
 gulp.task('server', function() {
     browserSync.init({
@@ -56,6 +42,8 @@ gulp.task('styles:compile', function () {
 
 gulp.task('js', function() {
     return gulp.src([
+        'source/js/init.js',
+        'source/js/validation.js',
         'source/js/form.js',
         'source/js/main.js'
         ])

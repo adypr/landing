@@ -20,6 +20,27 @@
         
     };
 
+    me.isValid = function () {
+        if (!me.isAllCompleted(document.querySelectorAll('[data-valid="required"]'))) {
+            console.log('Заполните поле электронной почты');
+            return false;
+        }
+        return true;
+    };
 
-    window.form = me;
+    me.isAllCompleted = function (data) {
+        var result = true;
+
+        for (var i = 0; i < data.length; i++) {
+            if (!Art.validation.isNotEmpty(data[i].value)) {
+                result = false;
+                break;
+            }
+        }
+
+        return result;
+    };
+
+
+    Art.form = me;
 }());
